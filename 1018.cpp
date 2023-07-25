@@ -1,15 +1,19 @@
 #include<stdio.h>
 int main(){
-    int score;
-    scanf("%d",&score);
-    if (score >= 60){
-        printf("pass");
-        char iscontinue;
-        scanf(" %c",&iscontinue);
-    } 
-    else {
-        printf("fail")
-    }
 
+    char iscontinue;
+    int score;
+    do {
+    scanf("%d",&score);
+
+        if (score >= 60){
+        printf("pass");
+        scanf(" %c",&iscontinue);
+        } 
+        else {
+        printf("fail");
+        scanf(" %c",&iscontinue);
+        }
+    } while (iscontinue == 'y');
     return 0;
 }
