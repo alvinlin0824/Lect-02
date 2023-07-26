@@ -4,15 +4,15 @@ int main(){
     char iscontinue;
     int score;
     do {
-    scanf("%d",&score);
+    scanf(" %d",&score);
 
         if (score >= 60){
-        printf("pass");
         scanf(" %c",&iscontinue);
+        printf("pass");
         } 
         else {
-        printf("fail");
         scanf(" %c",&iscontinue);
+        printf("fail");
         }
     } while (iscontinue == 'y');
     return 0;
