@@ -1,3 +1,6 @@
+// n = 1234567
+// ans = 1+2+3+4+5+6+7 = 28 
+
 #include<stdio.h>
 int main(){
     int a;
