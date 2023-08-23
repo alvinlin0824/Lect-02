@@ -6,9 +6,11 @@ using namespace std;
 
 int main(){
     int N;
+    // Dynamic memory allocation
     int *arr;
 
     cin >> N;
+    // Dynamic memory allocation
     arr = new int[N];
 
     for (int i = 0; i < N; i++)
@@ -54,7 +56,8 @@ int main(){
         }
     }
 
-    
+    delete []arr;
+
     cout << max << " " << max_index + 1 << endl;
     cout << min << " " << min_index + 1 << endl;
 
